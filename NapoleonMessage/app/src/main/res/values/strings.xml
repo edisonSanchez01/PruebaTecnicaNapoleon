@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NapoleonMessage</string>
+    <string name="title">Titulo</string>
+    <string name="message">Mensaje</string>
+</resources>
