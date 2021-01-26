@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="12dp"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
     android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <TextView
         android:layout_gravity="center"
         android:text="@string/title"
-        android:layout_margin="5dp"
+        android:layout_marginTop="16dp"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -19,8 +27,12 @@
 
     <TextView
         android:id="@+id/title"
+        android:gravity="center"
         android:layout_gravity="center"
-        android:layout_margin="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
         android:textColor="@color/black"
         android:textSize="15sp"
         android:layout_width="wrap_content"
@@ -29,7 +41,6 @@
     <TextView
         android:layout_gravity="center"
         android:text="@string/message"
-        android:layout_margin="5dp"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -38,16 +49,17 @@
 
     <TextView
         android:id="@+id/message"
+        android:gravity="center"
         android:layout_gravity="center"
-        android:layout_margin="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
         android:textColor="@color/black"
         android:textSize="15sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <View
-        android:background="@color/black"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"/>
+    </LinearLayout>
 
-</LinearLayout>
+</androidx.cardview.widget.CardView>

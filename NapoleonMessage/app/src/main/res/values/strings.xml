@@ -2,4 +2,8 @@
     <string name="app_name">NapoleonMessage</string>
     <string name="title">Titulo</string>
     <string name="message">Mensaje</string>
+    <string name="nameUser">Nombre</string>
+    <string name="emailUser">Email</string>
+    <string name="phoneUser">Telefono</string>
+    <string name="website">Sito Web Usuario</string>
 </resources>

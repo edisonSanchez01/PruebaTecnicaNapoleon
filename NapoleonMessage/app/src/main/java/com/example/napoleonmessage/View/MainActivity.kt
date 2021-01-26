@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        viewModel = ViewModelProvider(this).get(ViewModelMainActivity::class.java)
         recyclerView = findViewById(R.id.recyclerView)
         var swipeRefresh: SwipeRefreshLayout = findViewById(R.id.swipeRefresh)
         swipeRefresh.setOnRefreshListener {
@@ -36,7 +37,6 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = manager
         var adapter: PostAdapter = PostAdapter(this, listOf())
         recyclerView.adapter = adapter
-        viewModel = ViewModelProvider(this).get(ViewModelMainActivity::class.java)
         viewModel.posts.observe(this, Observer {
             adapter = PostAdapter(this, it)
             adapter.setOnItemClickListener(object: PostAdapter.OnItemClickListener{
